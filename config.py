@@ -7,23 +7,23 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "29906518"))
+API_HASH = getenv("API_HASH", "76a9e84e87200fb7311a2d779a42d13a")
+BOT_TOKEN = getenv("BOT_TOKEN", "6111967692:AAFEXQo6_5LyA9GNJz-m233iS_57eWr1aBk")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://avianandh004:sxptcTvwrszpdVF7@cluster0.op7ylmt.mongodb.net/?retryWrites=true&w=majority")
 
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001975396715"))
 
-BOT_NAME = getenv("BOT_NAME", "")
+BOT_NAME = getenv("BOT_NAME", "𝗦 𝗔 𝗥 𝗔 𝗛")
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "6140142325 1556830659").split())
 )
     
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/incorrect_krishna")
+    "SUPPORT_CHANNEL", "https://t.me/we_are_universee")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/frienddd_zoneee")
+    "SUPPORT_GROUP", "https://t.me/AF_Support_Group")
 
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "900")
@@ -38,13 +38,13 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/RocksKrishnaBot/AtiyaMusic",
+    "https://github.com/SARAHXQuin/Sarahkai",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
@@ -78,7 +78,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQBIXdaLduJ_0Gstqai5hDKSon1_AGpK8dzU3y6ZT5HcPonPKlcgoMiMZ5KeWGx4oc6RWf_87q3rSzN086_2xU1b2h4a9Rt-r-Tvh76EGx1_h7ikab8DgskbQ528eesyqYzkQpS9puTGKRHeQXLN9D4eOtHIfVTWnYkyisgC3uDQvfbSMJA5QUcJZX-Jgwk17xALTgF67UIF8ZJ2W0PwniO72WXp9dj1wzQEPgWwTAx0O3nPY-OzYNExSlFhyu_Pn74zAa3thuDF1E5Uh0pSXPCHJnB8-UIVn1eB2EbMbr9XVpR6jgkcKFDYs23cTc0gb9Eo4s4UARIUDhEQPcCjgboQAAAAAW37IvUA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
